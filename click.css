@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+img {
+  border: 1px solid black;
+  margin: 10px auto;
+}
+hr {
+  margin-top: 0;
+}
+footer {
+  position: absolute;
+  top: 95%;
+}
