@@ -1,5 +1,16 @@
 console.log('chill nugget');
 
+let data = ['apple','banana','cataloupe','dandelion','essence'];
+//let elData = document.getElementById('listTarget');
+for (let i = 0; i < data.length; i++){
+  let newItem = document.createElement('li');
+  let newItemText = document.createTextNode(data[i]);
+  newItem.appendChild(newItemText);
+  let elData = document.getElementById('listTarget');
+  elData.appendChild(newItem);
+}
+
+
 let colaObj = {
   name: 'cola fresh!!!',
   colaClicks: 0,

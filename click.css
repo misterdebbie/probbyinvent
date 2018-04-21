@@ -20,3 +20,28 @@ footer {
   font-size: 4rem;
   margin: auto;
 }
+
+ul {
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+li:hover {
+  color: deeppink;
+}
+
+@media screen and (max-width:400px){
+  .page {
+    background-color: #ffe6e6;
+  }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+}
