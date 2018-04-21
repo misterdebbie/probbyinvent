@@ -49,3 +49,27 @@ let burgerObj = {
 }
 burgerObj.displayName();
 burgerObj.countClicks();
+
+let test = 'YANG';
+let el = document.createElement('p');
+el.className = 'pink';
+el.textContent = test;
+el.addEventListener('click', () => {
+  let total = 0;
+  total += 1;
+  console.log(`my name is ${test}`);
+  document.body.style.backgroundColor = 'lightseagreen';
+});
+document.body.appendChild(el);
+
+let closureTest = 5;
+let myEl = document.createElement('p');
+myEl.textContent = closureTest;
+myEl.addEventListener('click', (function(closureCopy){
+  return function(){
+    console.log(`this is the ${closureCopy}`);
+    console.log(closureCopy += 1);
+    console.log(`this is the closureTest variable ${closureTest}`);
+  };
+})(closureTest));
+document.body.appendChild(myEl);

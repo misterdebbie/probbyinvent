@@ -14,3 +14,9 @@ footer {
   position: absolute;
   top: 95%;
 }
+.pink {
+  color: deeppink;
+  width: 5%;
+  font-size: 4rem;
+  margin: auto;
+}
